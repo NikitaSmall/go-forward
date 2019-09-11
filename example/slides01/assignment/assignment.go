@@ -18,6 +18,9 @@ func assign() {
 	)
 
 	caution := "you have to use the variable once it's declared!!!"
+
+	can, assign, inMasse := "different", "variables", "declaration and initialization"
+
 	log.Print(variable, otherVar, typesOfAssignment,
-		massAssign, massConst, third, caution)
+		massAssign, massConst, third, caution, can, assign, inMasse)
 }

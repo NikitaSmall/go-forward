@@ -1,6 +1,9 @@
 package funcs
 
-import "fmt"
+import (
+	"errors"
+	"fmt"
+)
 
 func simple() {
 	fmt.Println("just do something")
@@ -18,6 +21,10 @@ func moreDifferentVars(str string, number int) {
 	for i := 0; i < number; i++ {
 		fmt.Println(str)
 	}
+}
+
+func multiReturn() (string, string, error) {
+	return "will return", "cortege", errors.New("different type and classic error")
 }
 
 func moreOfTheSame(name, book, desc string) string {
