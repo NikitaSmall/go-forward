@@ -20,7 +20,7 @@ type User struct {
 	gender string // no marshal, as the field is private (isn't exported)
 }
 
-// NewUser is just a constuctor function
+// NewUser is just a constructor function
 // no sign of annotation here, it's just a tradition that only exported fields should be annotated
 func NewUser(name, profession, gender string, age int) *User {
 	return &User{
